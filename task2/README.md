@@ -23,7 +23,9 @@
 
 ## Результаты проверок
 ### Lighthouse
+* **Desktop:**  
 ![Результаты Desktop](./tests/Desktop_lighthouse.png)
+* **Mobile:**  
 ![Результаты Mobile](./tests/Mobile_lighthouse.png)
 
 ### Валидация HTML/CSS
