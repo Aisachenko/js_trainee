@@ -43,13 +43,6 @@
     flex-direction: column;
 }
 
-/* ===== IMAGE OPTIMIZATION ===== */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* ===== BASE STYLES ===== */
 * {
     margin: 0;
@@ -348,21 +341,21 @@ img {
 
 .frame2 {
     &__content {
-        flex: 0 0 45%;
+        flex: 0 0 513px;
         text-align: left;
     }
 
     &__title {
         font-size: 48px;
         font-weight: 600;
-        color: @color-dark;
+        @color-black: #000000;
         margin-bottom: 30px;
     }
 
     &__text {
         font-size: 16px;
         line-height: 1.6;
-        color: @color-dark;
+        color: @color-gray;
         margin-bottom: 40px;
 
         &:first-of-type {
@@ -371,7 +364,7 @@ img {
     }
 
     &__image {
-        flex: 0 0 45%;
+        flex: 0 0 543px;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
