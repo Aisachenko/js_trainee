@@ -248,13 +248,12 @@
   right: -10%;
 }
 .frame2__content {
-  flex: 0 0 45%;
+  flex: 0 0 513px;
   text-align: left;
 }
 .frame2__title {
   font-size: 48px;
   font-weight: 600;
-  color: #223329;
   margin-bottom: 30px;
 }
 .frame2__text {
@@ -267,7 +266,7 @@
   margin-bottom: 0;
 }
 .frame2__image {
-  flex: 0 0 45%;
+  flex: 0 0 543px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
