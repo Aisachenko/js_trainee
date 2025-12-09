@@ -6,6 +6,13 @@ img {
   height: auto;
   display: block;
 }
+.frame1__main-image,
+.frame1__thumbnail,
+.frame2__img,
+.frame4__card__image,
+.frame6__card-image {
+  loading: lazy;
+}
 /* ===== BASE STYLES ===== */
 * {
   margin: 0;

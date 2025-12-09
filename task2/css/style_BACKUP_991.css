@@ -254,24 +254,26 @@ img {
   right: -10%;
 }
 .frame2__content {
-  flex: 0 0 513px;
+  flex: 0 0 45%;
   text-align: left;
 }
 .frame2__title {
   font-size: 48px;
   font-weight: 600;
+  color: #223329;
   margin-bottom: 30px;
 }
 .frame2__text {
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 25px;
+  color: #666;
+  margin-bottom: 40px;
 }
 .frame2__text:first-of-type {
   margin-bottom: 0;
 }
 .frame2__image {
-  flex: 0 0 543px;
+  flex: 0 0 45%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
