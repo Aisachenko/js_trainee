@@ -65,7 +65,7 @@
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 0;
 
     &--header {
         justify-content: space-between; 
@@ -75,26 +75,38 @@
         height: 100%;
     }
 
+    &--frame1 {
+        gap: 60px;
+    }
+
+    &--frame2 {
+        justify-content:baseline;
+        gap: 35px;
+        padding: 0;
+    }
+
     &--frame3 {
-        gap: 40px;
+        padding: 0;
     }
 
     &--frame4 {
-        gap: 0;
         .flex-column();
     }
 
     &--frame5 {
-        gap: 0;
         .flex-column();
     }
 
+    &--frame6 {
+        padding: 0;
+    }
+
     &--frame7 {
-        gap: 0;
         .flex-column();
     }
 
     &--footer {
+        gap: 60px;
         justify-content: space-between;
     }
 }
@@ -126,14 +138,14 @@
     }
 
     &--frame6 {
-        padding: 20px 40px; 
+        padding: 16px 24px; 
         font-size: 16px;
     }
 
     &--form {
         align-self: flex-end;
         margin-top: 30px;
-        padding: 21px 40px;
+        padding: 16px 24px; 
         font-size: 16px;
         width: auto;
         display: inline-block;
@@ -160,7 +172,7 @@
         display: inline-block;
         margin-bottom: 40px;
         text-decoration: underline;
-        text-underline-offset: 7px;
+        text-underline-offset: 9px;
 
         &:hover {
             color: @color-black;
@@ -267,7 +279,7 @@
     }
 
     &__title {
-        color: @color-dark;
+        color: @color-black;
         font-size: 70px;
         line-height: 1;
         text-transform: uppercase;
@@ -279,7 +291,7 @@
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 40px;
-        color: @color-dark;
+        color: @color-black;
     }
 
     &__image {
@@ -341,7 +353,7 @@
 
 .frame2 {
     &__content {
-        flex: 0 0 513px;
+        flex: 0 1 513px;
         text-align: left;
     }
 
@@ -355,8 +367,8 @@
     &__text {
         font-size: 16px;
         line-height: 1.6;
-        color: @color-gray;
-        margin-bottom: 40px;
+        color: @color-black;
+        margin-bottom: 30px;
 
         &:first-of-type {
             margin-bottom: 0;
@@ -364,7 +376,7 @@
     }
 
     &__image {
-        flex: 0 0 543px;
+        flex: 0 1 543px;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
@@ -383,7 +395,7 @@
     }
 
     &__info {
-        margin-bottom: 50px;
+        margin-bottom: 90px;
     }
 
     &__title {
@@ -402,6 +414,7 @@
     }
 
     &__ratings {
+        padding-bottom: 20px;
         display: flex;
         gap: 80px;
     }
@@ -416,14 +429,14 @@
         margin-bottom: 18px;
 
         &__star {
-            width: 20px;
-            height: 20px;
+            width: 26px;
+            height: 26px;
         }
     }
 
     &__rating-value {
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 500;
         color: #191A15;
         margin-bottom: 18px;
     }
@@ -434,7 +447,7 @@
     }
 
     &__stats {
-        flex: 0 1 540px;
+        flex: 0 1 542px;
         .flex-column();
         gap: 25px;
     }
@@ -646,6 +659,7 @@
         line-height: 1.2;
         text-align: center;
         width: 100%;
+        margin-bottom: 40px;
     }
 
     &__grid {
@@ -655,6 +669,7 @@
         grid-template-rows: repeat(2, auto);
         gap: 40px;
         justify-items: center;
+        margin-bottom: 40px;
     }
 
     &__card {
@@ -672,14 +687,13 @@
         height: 150px;
         object-fit: cover;
         border-radius: 50%;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     &__card-title {
         font-size: 16px;
         font-weight: 700;
         color: @color-black;
-        margin-bottom: 10px;
         line-height: 1.3;
     }
 
@@ -828,7 +842,6 @@
         padding: 0 15px;
 
         &:first-child {
-            flex: 2;
             min-width: 350px;
             display: flex;
             gap: 80px;
@@ -841,12 +854,6 @@
                     opacity: 1;
                 }
             }
-        }
-
-        &:nth-child(2),
-        &:nth-child(3) {
-            flex: 1;
-            min-width: 200px;
         }
     }
 
@@ -947,7 +954,7 @@
             text-align: center;
         }
         
-        &--frame4 {
+        &--frame2, &--frame4, &--frame3 {
             padding: 0 40px;
         }
     }
@@ -1173,6 +1180,7 @@
         padding: 60px 0;
         
         .container--footer {
+            display: flex;
             justify-content: space-between;
             align-items: flex-start;
             flex-direction: row;
