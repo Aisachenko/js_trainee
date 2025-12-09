@@ -1,5 +1,18 @@
 /* ===== VARIABLES ===== */
 /* ===== MIXINS ===== */
+/* ===== IMAGE OPTIMIZATION ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.frame1__main-image,
+.frame1__thumbnail,
+.frame2__img,
+.frame4__card__image,
+.frame6__card-image {
+  loading: lazy;
+}
 /* ===== BASE STYLES ===== */
 * {
   margin: 0;
@@ -248,26 +261,24 @@
   right: -10%;
 }
 .frame2__content {
-  flex: 0 0 45%;
+  flex: 0 0 513px;
   text-align: left;
 }
 .frame2__title {
   font-size: 48px;
   font-weight: 600;
-  color: #223329;
   margin-bottom: 30px;
 }
 .frame2__text {
   font-size: 16px;
   line-height: 1.6;
-  color: #666;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .frame2__text:first-of-type {
   margin-bottom: 0;
 }
 .frame2__image {
-  flex: 0 0 45%;
+  flex: 0 0 543px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
