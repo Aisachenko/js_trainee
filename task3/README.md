@@ -44,4 +44,4 @@ cd your-repository
 ## Deploy
 
 Project deployed on GitHub Pages.
-**[Take a look](https://hlebushark.github.io/testing_rep)**
+**[Take a look](https://aisachenko.github.io/js_trainee/task3/)**

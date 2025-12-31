@@ -8,7 +8,7 @@
     "build:dev": "webpack --mode development",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "homepage": "https://hlebushark.github.io/testing_rep/",
+  "homepage": "https://aisachenko.github.io/js_trainee/task3/",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
