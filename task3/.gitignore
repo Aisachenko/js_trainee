@@ -5,7 +5,8 @@ logs
 **/*.backup.*
 **/*.back.*
 
-node_modules
+/dist
+/node_modules
 bower_components
 
 *.sublime*
@@ -13,5 +14,3 @@ bower_components
 psd
 thumb
 sketch
-
-dist
