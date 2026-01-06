@@ -22,7 +22,8 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import CloudIcon from '@mui/icons-material/Cloud';
 import StorageIcon from '@mui/icons-material/Storage';
 import AllInboxIcon from '@mui/icons-material/AllInbox';
-import { useGetProductsQuery, useGetCategoriesQuery } from '../../api/productsApi';
+import { useGetProductsQuery } from '../../api/productsApi';
+import { PRODUCT_CATEGORIES } from '../../utils/constants';
 import ProductCard from './ProductCard';
 import { useSelector } from 'react-redux';
 import { selectIsAdmin } from '../../features/auth/authSlice';
@@ -81,12 +82,10 @@ const ProductList = () => {
     limit: 100, 
     skip: 0,
     search: debouncedSearch,
-    category: productType === 'api' ? category : '', 
+    category,
     sortBy,
     order
   });
-
-  const { data: categoriesData } = useGetCategoriesQuery();
 
   // Filter
   const getFilteredProducts = () => {
@@ -277,9 +276,11 @@ const ProductList = () => {
                   }}
                 >
                   <MenuItem value="">All Categories</MenuItem>
-                  {categoriesData?.map((cat) => (
-                    <MenuItem key={cat.slug} value={cat.slug}>
-                      {cat.name}
+                  {PRODUCT_CATEGORIES.map((cat) => (
+                    <MenuItem key={cat} value={cat}>
+                      {cat.split('-').map(word => 
+                        word.charAt(0).toUpperCase() + word.slice(1)
+                      ).join(' ')}
                     </MenuItem>
                   ))}
                 </Select>
