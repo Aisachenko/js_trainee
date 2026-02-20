@@ -55,6 +55,9 @@ const createPostRoute = createRoute({
   path: '/create',
   component: CreatePostPage,
   validateSearch: (search: Record<string, unknown>) => {
+    if (Object.keys(search).length === 0) {
+      return {} 
+    }
     return {
       editId: search.editId as string | undefined,
     }
