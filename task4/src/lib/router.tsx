@@ -54,6 +54,11 @@ const createPostRoute = createRoute({
   getParentRoute: () => postsRoute,
   path: '/create',
   component: CreatePostPage,
+  validateSearch: (search: Record<string, unknown>) => {
+    return {
+      editId: search.editId as string | undefined,
+    }
+  },
 })
 
 const routeTree = rootRoute.addChildren([
