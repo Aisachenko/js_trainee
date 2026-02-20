@@ -42,3 +42,5 @@ Project deployed on Netlify.
 - **Unit** for api/posts.ts & hook/usePosts.ts
 - **Module** for components/posts/Post.tsx & components/ui/Button
 - **Snapshot** for components/posts/Post.tsx & components/ui/Button
+
+<img width="930" height="274" alt="{CDED15A4-09B7-4124-A52E-50E975B51A17}" src="https://github.com/user-attachments/assets/4602e111-4e7f-42b3-9fd6-a566c284ddee" />
